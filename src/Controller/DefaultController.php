@@ -18,6 +18,6 @@ class DefaultController extends AbstractController
                 'message' => 'Bienvenue !',
             ]
 
-        );
+            );
     }
 }

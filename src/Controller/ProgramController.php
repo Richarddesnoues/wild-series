@@ -18,6 +18,6 @@ class ProgramController extends AbstractController
                 'website' => 'Wild Series',
             ]
 
-        );
+            );
     }
 }

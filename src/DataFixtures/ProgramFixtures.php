@@ -43,6 +43,24 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setCategory($this->getReference('category_Horreur'));
         $manager->persist($program);
 
+        $program = new Program();
+        $program->setTitle('Walking dread');
+        $program->setSynopsis('Des dreadlocks zombies envahissent la terre');
+        $program->setCategory($this->getReference('category_Horreur'));
+        $manager->persist($program);
+
+        $program = new Program();
+        $program->setTitle('Joséphine ange gardien');
+        $program->setSynopsis("Une actrice souffrant d'achondroplasie résoud des enquêtes en jouant très mal");
+        $program->setCategory($this->getReference('category_Horreur'));
+        $manager->persist($program);
+
+        $program = new Program();
+        $program->setTitle('Derick');
+        $program->setSynopsis("Un inspecteur de la police allemande résoud des enquêtes le pus lentement possible, personne n'a pu voir un épisode en entier ,soit les gens se sont endormit soit ils sont morts.");
+        $program->setCategory($this->getReference('category_Horreur'));
+        $manager->persist($program);
+
         $manager->flush();
     }
 

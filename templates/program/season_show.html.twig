@@ -11,13 +11,14 @@
                     <div>
                         <h2>Episode {{ loop.index }} : {{ episode.title }}</h2>
                         <p>{{ episode.synopsis }}</p>
+                        <a href="{{ path("program_episode_show", { "program" : program.id, "season" : season.id, "episode": episode.id }) }}">Voir la fiche</a>
                     </div>
                 {% endfor %}
             </div>
         </div>
     </div>
 
-    <a href="{{ path('category_index') }}">
-        Retour à la liste des category
+    <a href="{{ path('program_index') }}">
+        Retour au programe
     </a>
 {% endblock %}
